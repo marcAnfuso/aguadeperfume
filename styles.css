@@ -480,7 +480,7 @@ header h1 {
 }
 
 .inventory-table th {
-    padding: 0.8rem 0.6rem;
+    padding: 0.6rem 0.5rem;
     text-align: left;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -497,8 +497,17 @@ header h1 {
     transition: var(--transition);
 }
 
-.inventory-table tbody tr:hover {
+/* Diferenciación por género */
+.inventory-table tbody tr.row-femenino {
+    background-color: var(--color-secondary);
+}
+
+.inventory-table tbody tr.row-masculino {
     background-color: var(--color-accent);
+}
+
+.inventory-table tbody tr:hover {
+    filter: brightness(0.97);
 }
 
 .inventory-table tbody tr:last-child {
@@ -506,13 +515,19 @@ header h1 {
 }
 
 .inventory-table td {
-    padding: 0.9rem 0.6rem;
+    padding: 0.6rem 0.5rem;
     vertical-align: middle;
     border-right: 1px solid var(--color-border);
 }
 
 .inventory-table td:last-child {
     border-right: none;
+}
+
+.gender-icon {
+    font-size: 0.7rem;
+    margin-right: 0.3rem;
+    opacity: 0.6;
 }
 
 .table-id {
@@ -954,13 +969,22 @@ footer p {
     }
 
     .inventory-table tr {
-        margin-bottom: 1rem;
+        margin-bottom: 0.7rem;
         border: 1px solid var(--color-border);
         padding: 0;
     }
 
+    /* Mantener diferenciación de género en mobile */
+    .inventory-table tr.row-masculino {
+        background-color: var(--color-accent);
+    }
+
+    .inventory-table tr.row-femenino {
+        background-color: var(--color-secondary);
+    }
+
     .inventory-table td {
-        padding: 0.7rem 1rem;
+        padding: 0.5rem 0.8rem;
         border: none;
         border-bottom: 1px solid var(--color-border);
         display: flex;
@@ -971,13 +995,14 @@ footer p {
     .inventory-table td:last-child {
         border-bottom: none;
         justify-content: center;
+        padding: 0.6rem 0.8rem;
     }
 
     .inventory-table td:before {
         content: attr(data-label);
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 0.6rem;
+        font-size: 0.55rem;
         letter-spacing: 1px;
         color: var(--color-text-light);
     }
@@ -991,14 +1016,19 @@ footer p {
     }
 
     .table-note-tag {
-        font-size: 0.55rem;
-        padding: 0.15rem 0.35rem;
+        font-size: 0.5rem;
+        padding: 0.12rem 0.3rem;
     }
 
     .table-btn {
-        font-size: 0.75rem;
-        padding: 0.6rem 1.2rem;
+        font-size: 0.7rem;
+        padding: 0.55rem 1rem;
         width: 100%;
+    }
+
+    .gender-icon {
+        font-size: 0.65rem;
+        margin-right: 0.25rem;
     }
 
     .inventory-header {
@@ -1064,14 +1094,23 @@ footer p {
 
     .inventory-table th,
     .inventory-table td {
-        padding: 0.5rem 0.3rem;
+        padding: 0.4rem 0.6rem;
     }
 
     .table-name {
-        font-size: 0.7rem;
+        font-size: 0.68rem;
     }
 
     .table-brand {
+        font-size: 0.58rem;
+    }
+
+    .table-note-tag {
+        font-size: 0.48rem;
+        padding: 0.1rem 0.25rem;
+    }
+
+    .gender-icon {
         font-size: 0.6rem;
     }
 }

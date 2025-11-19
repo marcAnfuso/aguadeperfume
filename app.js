@@ -199,6 +199,9 @@ function createTableRow(perfume) {
         .map(nota => `<span class="table-note-tag">${nota}</span>`)
         .join('');
 
+    // Ícono según género
+    const genderIcon = perfume.genero === 'femenino' ? '◆' : '■';
+
     // Determinar si mostrar columna de género
     const generoColumn = tableGenderFilter === 'todos'
         ? `<td data-label="Género:"><span class="table-gender">${perfume.genero.toUpperCase()}</span></td>`
@@ -209,9 +212,12 @@ function createTableRow(perfume) {
     const buttonText = inCart ? 'Quitar del Pedido' : 'Agregar al Pedido';
     const buttonClass = inCart ? 'table-btn table-remove-from-cart' : 'table-btn table-add-to-cart';
 
+    // Aplicar clase de género para background
+    row.className = perfume.genero === 'masculino' ? 'row-masculino' : 'row-femenino';
+
     row.innerHTML = `
         <td data-label="ID:"><span class="table-id">Nº ${productId}</span></td>
-        <td data-label="Nombre:"><span class="table-name">${perfume.nombre}</span></td>
+        <td data-label="Nombre:"><span class="table-name"><span class="gender-icon">${genderIcon}</span> ${perfume.nombre}</span></td>
         <td data-label="Marca:"><span class="table-brand">${perfume.marca}</span></td>
         ${generoColumn}
         <td data-label="Notas:"><div class="table-notes">${notesHTML}</div></td>
