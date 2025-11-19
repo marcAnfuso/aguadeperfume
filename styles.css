@@ -64,18 +64,26 @@ header h1 {
     letter-spacing: 1px;
     margin-top: 0.8rem;
     opacity: 0.9;
-    color: var(--color-secondary);
-    text-decoration: none;
+    color: var(--color-secondary) !important;
+    text-decoration: none !important;
     transition: var(--transition);
+}
+
+.instagram-link:visited,
+.instagram-link:active {
+    color: var(--color-secondary) !important;
+    text-decoration: none !important;
 }
 
 .instagram-link:hover {
     opacity: 1;
+    text-decoration: none !important;
 }
 
 .instagram-link svg {
     width: 16px;
     height: 16px;
+    flex-shrink: 0;
 }
 
 /* Hero Section */
