@@ -7,7 +7,7 @@ let tableGenderFilter = 'todos'; // 'todos', 'femenino', 'masculino'
 let cart = []; // Carrito de compras
 
 // Configuración de WhatsApp
-const WHATSAPP_NUMBER = '5491112345678'; // CAMBIAR por el número de tu hermano con código de país
+const WHATSAPP_NUMBER = '5491139457241';
 
 // Elementos del DOM
 const searchInput = document.getElementById('searchInput');

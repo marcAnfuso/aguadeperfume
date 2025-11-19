@@ -55,12 +55,27 @@ header h1 {
     text-transform: uppercase;
 }
 
-.instagram {
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 0.8rem;
     opacity: 0.9;
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.instagram-link:hover {
+    opacity: 1;
+}
+
+.instagram-link svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* Hero Section */
