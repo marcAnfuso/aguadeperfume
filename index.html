@@ -8,17 +8,19 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>ESENCIAS PREMIUM</h1>
-            <p class="tagline">Elegí tu fragancia y coordinamos la entrega por WhatsApp</p>
-            <a href="https://instagram.com/aguadeperfume" target="_blank" class="instagram-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-                @aguadeperfume
-            </a>
+        <div class="header-overlay">
+            <div class="container">
+                <h1>AGUA DE PERFUME</h1>
+                <p class="tagline">Pagás la esencia, no el marketing</p>
+                <a href="https://instagram.com/aguadeperfume" target="_blank" class="instagram-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    @aguadeperfume
+                </a>
+            </div>
         </div>
     </header>
 
@@ -68,21 +70,24 @@
                 <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
                 </svg>
-                <span>60ml Premium</span>
+                <div class="info-title">60ML PREMIUM</div>
+                <div class="info-subtitle">Esencias concentradas de alta duración</div>
             </div>
             <div class="info-item">
                 <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="12" y1="1" x2="12" y2="23"></line>
                     <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                 </svg>
-                <span>$17.900</span>
+                <div class="info-title">$17.900</div>
+                <div class="info-subtitle">Precio único por fragancia</div>
             </div>
             <div class="info-item">
                 <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Llavallol / GBA Sur</span>
+                <div class="info-title">LLAVALLOL / GBA SUR</div>
+                <div class="info-subtitle">Coordinamos punto de encuentro</div>
             </div>
             <div class="info-item">
                 <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -91,12 +96,10 @@
                     <circle cx="5.5" cy="18.5" r="2.5"></circle>
                     <circle cx="18.5" cy="18.5" r="2.5"></circle>
                 </svg>
-                <span>Entrega a domicilio</span>
+                <div class="info-title">ENTREGA A DOMICILIO</div>
+                <div class="info-subtitle">Día y horario a convenir</div>
             </div>
         </section>
-
-        <!-- Results Count -->
-        <div id="resultsCount" class="results-count"></div>
 
         <!-- Featured Section: Top 6 -->
         <section id="featuredSection" class="featured-section">
@@ -121,8 +124,12 @@
 
         <!-- Inventory Table Section -->
         <section id="inventorySection" class="inventory-section">
+            <h2 class="section-title">INVENTARIO COMPLETO</h2>
+
+            <!-- Results Count -->
+            <div id="resultsCount" class="results-count"></div>
+
             <div class="inventory-header">
-                <h2 class="section-title">INVENTARIO COMPLETO</h2>
                 <div class="table-filters">
                     <label class="filter-checkbox" for="filterTableTodos">
                         <input type="checkbox" id="filterTableTodos" checked>
@@ -136,6 +143,16 @@
                         <input type="checkbox" id="filterTableMasculino">
                         <span>Masculino</span>
                     </label>
+                </div>
+            </div>
+            <div class="table-legend">
+                <div class="legend-item">
+                    <span class="legend-icon">◆</span>
+                    <span class="legend-text">Femenino</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-icon">■</span>
+                    <span class="legend-text">Masculino</span>
                 </div>
             </div>
             <div class="table-container">
