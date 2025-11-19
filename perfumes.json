@@ -6,7 +6,7 @@
     "genero": "femenino",
     "ranking": 1,
     "notas": ["floral", "frutal", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "genero": "femenino",
     "ranking": 2,
     "notas": ["floral", "aromático", "madera"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "genero": "femenino",
     "ranking": 3,
     "notas": ["floral", "frutal", "aromático", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "genero": "femenino",
     "ranking": 4,
     "notas": ["floral", "cítrico", "vainilla"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "genero": "femenino",
     "ranking": 5,
     "notas": ["floral", "frutal"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "genero": "femenino",
     "ranking": 6,
     "notas": ["floral", "frutal", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "genero": "femenino",
     "ranking": 7,
     "notas": ["floral", "frutal"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "genero": "femenino",
     "ranking": 8,
     "notas": ["floral", "frutal", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "genero": "femenino",
     "ranking": 9,
     "notas": ["floral", "cítrico", "acqua"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "genero": "femenino",
     "ranking": 10,
     "notas": ["floral", "frutal"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "genero": "femenino",
     "ranking": 11,
     "notas": ["floral", "frutal", "caramelo", "cítrico"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "genero": "femenino",
     "ranking": 12,
     "notas": ["floral", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "genero": "femenino",
     "ranking": 13,
     "notas": ["frutal", "aromático", "floral"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "genero": "femenino",
     "ranking": 14,
     "notas": ["floral", "frutal"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "genero": "femenino",
     "ranking": 15,
     "notas": ["floral", "frutal", "aromático", "madera"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "genero": "femenino",
     "ranking": 16,
     "notas": ["floral", "frutal", "cítrico"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "genero": "femenino",
     "ranking": 17,
     "notas": ["frutal", "aromático", "floral"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "genero": "femenino",
     "ranking": 18,
     "notas": ["floral", "frutal", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "genero": "femenino",
     "ranking": 19,
     "notas": ["floral", "cítrico", "acqua"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 20,
@@ -177,7 +177,7 @@
     "genero": "femenino",
     "ranking": 20,
     "notas": ["floral", "frutal", "caramelo"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "genero": "femenino",
     "ranking": 21,
     "notas": ["floral"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 22,
@@ -195,7 +195,7 @@
     "genero": "femenino",
     "ranking": 22,
     "notas": ["floral", "frutal"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 23,
@@ -204,7 +204,7 @@
     "genero": "femenino",
     "ranking": 23,
     "notas": ["floral", "frutal", "cítrico"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 24,
@@ -213,7 +213,7 @@
     "genero": "femenino",
     "ranking": 24,
     "notas": ["cítrico", "floral", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 25,
@@ -222,7 +222,7 @@
     "genero": "femenino",
     "ranking": 25,
     "notas": ["frutal", "vainilla"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 26,
@@ -231,7 +231,7 @@
     "genero": "femenino",
     "ranking": 26,
     "notas": ["floral"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 27,
@@ -240,7 +240,7 @@
     "genero": "femenino",
     "ranking": 27,
     "notas": ["floral", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 28,
@@ -249,7 +249,7 @@
     "genero": "femenino",
     "ranking": 28,
     "notas": ["frutal", "aromático", "verde"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 29,
@@ -258,7 +258,7 @@
     "genero": "femenino",
     "ranking": 29,
     "notas": ["floral", "frutal", "aromático", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 30,
@@ -267,7 +267,7 @@
     "genero": "femenino",
     "ranking": 30,
     "notas": ["floral", "frutal", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 31,
@@ -276,7 +276,7 @@
     "genero": "femenino",
     "ranking": 31,
     "notas": ["floral", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 32,
@@ -285,7 +285,7 @@
     "genero": "femenino",
     "ranking": 32,
     "notas": ["cítrico", "acqua", "floral"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 33,
@@ -294,7 +294,7 @@
     "genero": "femenino",
     "ranking": 33,
     "notas": ["floral", "frutal"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 34,
@@ -303,7 +303,7 @@
     "genero": "femenino",
     "ranking": 34,
     "notas": ["floral", "frutal", "madera"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 35,
@@ -312,7 +312,7 @@
     "genero": "femenino",
     "ranking": 35,
     "notas": ["floral", "frutal", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 36,
@@ -321,7 +321,7 @@
     "genero": "femenino",
     "ranking": 36,
     "notas": ["floral", "cítrico"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 37,
@@ -330,7 +330,7 @@
     "genero": "femenino",
     "ranking": 37,
     "notas": ["especiado", "aromático", "floral"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 38,
@@ -339,7 +339,7 @@
     "genero": "femenino",
     "ranking": 38,
     "notas": ["floral", "frutal", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 101,
@@ -348,7 +348,7 @@
     "genero": "masculino",
     "ranking": 1,
     "notas": ["floral", "aromático", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 102,
@@ -357,7 +357,7 @@
     "genero": "masculino",
     "ranking": 2,
     "notas": ["floral", "frutal", "madera"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 103,
@@ -366,7 +366,7 @@
     "genero": "masculino",
     "ranking": 3,
     "notas": ["caramelo", "cítrico", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 104,
@@ -375,7 +375,7 @@
     "genero": "masculino",
     "ranking": 4,
     "notas": ["aromático", "cítrico", "floral"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 105,
@@ -384,7 +384,7 @@
     "genero": "masculino",
     "ranking": 5,
     "notas": ["floral", "cítrico"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 106,
@@ -393,7 +393,7 @@
     "genero": "masculino",
     "ranking": 6,
     "notas": ["cítrico", "vainilla", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 107,
@@ -402,7 +402,7 @@
     "genero": "masculino",
     "ranking": 7,
     "notas": ["cítrico", "frutal", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 108,
@@ -411,7 +411,7 @@
     "genero": "masculino",
     "ranking": 8,
     "notas": ["acqua", "madera", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 109,
@@ -420,7 +420,7 @@
     "genero": "masculino",
     "ranking": 9,
     "notas": ["cítrico", "especiado", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 110,
@@ -429,7 +429,7 @@
     "genero": "masculino",
     "ranking": 10,
     "notas": ["especiado", "aromático", "madera"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 111,
@@ -438,7 +438,7 @@
     "genero": "masculino",
     "ranking": 11,
     "notas": ["madera", "floral", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 112,
@@ -447,7 +447,7 @@
     "genero": "masculino",
     "ranking": 12,
     "notas": ["floral", "verde", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 113,
@@ -456,7 +456,7 @@
     "genero": "masculino",
     "ranking": 13,
     "notas": ["cítrico", "madera", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 114,
@@ -465,7 +465,7 @@
     "genero": "masculino",
     "ranking": 14,
     "notas": ["especiado", "aromático", "madera"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 118,
@@ -474,7 +474,7 @@
     "genero": "masculino",
     "ranking": 18,
     "notas": ["frutal", "verde"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 119,
@@ -483,7 +483,7 @@
     "genero": "masculino",
     "ranking": 19,
     "notas": ["cítrico", "aromático", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 120,
@@ -492,7 +492,7 @@
     "genero": "masculino",
     "ranking": 20,
     "notas": ["acqua", "madera", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 121,
@@ -501,7 +501,7 @@
     "genero": "masculino",
     "ranking": 21,
     "notas": ["madera", "vainilla", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 122,
@@ -510,7 +510,7 @@
     "genero": "masculino",
     "ranking": 22,
     "notas": ["especiado", "madera", "frutal"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 123,
@@ -519,7 +519,7 @@
     "genero": "masculino",
     "ranking": 23,
     "notas": ["acqua", "verde"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 124,
@@ -528,7 +528,7 @@
     "genero": "masculino",
     "ranking": 24,
     "notas": ["frutal", "cítrico", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 125,
@@ -537,7 +537,7 @@
     "genero": "masculino",
     "ranking": 25,
     "notas": ["cítrico", "aromático", "madera"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 126,
@@ -546,7 +546,7 @@
     "genero": "masculino",
     "ranking": 26,
     "notas": ["aromático", "especiado", "floral"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 127,
@@ -555,7 +555,7 @@
     "genero": "masculino",
     "ranking": 27,
     "notas": ["especiado", "aromático", "frutal"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 128,
@@ -564,7 +564,7 @@
     "genero": "masculino",
     "ranking": 28,
     "notas": ["floral", "especiado", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 129,
@@ -573,7 +573,7 @@
     "genero": "masculino",
     "ranking": 29,
     "notas": ["aromático", "madera", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 130,
@@ -582,7 +582,7 @@
     "genero": "masculino",
     "ranking": 30,
     "notas": ["aromático", "cítrico", "madera"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 131,
@@ -591,7 +591,7 @@
     "genero": "masculino",
     "ranking": 31,
     "notas": ["cítrico", "especiado", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 132,
@@ -600,7 +600,7 @@
     "genero": "masculino",
     "ranking": 32,
     "notas": ["acqua", "floral", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 133,
@@ -609,7 +609,7 @@
     "genero": "masculino",
     "ranking": 33,
     "notas": ["especiado", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 134,
@@ -618,7 +618,7 @@
     "genero": "masculino",
     "ranking": 34,
     "notas": ["aromático", "verde"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 135,
@@ -627,7 +627,7 @@
     "genero": "masculino",
     "ranking": 35,
     "notas": ["cítrico", "madera", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 136,
@@ -636,7 +636,7 @@
     "genero": "masculino",
     "ranking": 36,
     "notas": ["cítrico", "madera", "aromático"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 137,
@@ -645,7 +645,7 @@
     "genero": "masculino",
     "ranking": 37,
     "notas": ["verde", "especiado"],
-    "precio": 16900
+    "precio": 17900
   },
   {
     "id": 138,
@@ -654,6 +654,6 @@
     "genero": "masculino",
     "ranking": 38,
     "notas": ["especiado", "aromático", "floral"],
-    "precio": 16900
+    "precio": 17900
   }
 ]

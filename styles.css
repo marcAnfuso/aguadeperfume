@@ -959,6 +959,15 @@ footer p {
         background-color: var(--color-secondary);
     }
 
+    .wholesale-header {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.8rem;
+        font-weight: 400;
+        color: var(--color-text);
+    }
+
     .wholesale-text {
         font-size: 0.8rem;
         line-height: 1.5;
