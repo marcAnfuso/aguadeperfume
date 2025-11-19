@@ -120,10 +120,10 @@ function createProductCard(perfume) {
         .map(nota => `<span class="note-tag">${nota}</span>`)
         .join('');
 
-    // Verificar si está en el carrito
-    const inCart = isInCart(perfume.id);
-    const buttonText = inCart ? 'Quitar del Pedido' : 'Agregar al Pedido';
-    const buttonClass = inCart ? 'whatsapp-btn remove-from-cart-btn' : 'whatsapp-btn add-to-cart-btn';
+    // Verificar si está en el carrito y obtener cantidad
+    const cartQty = getCartQuantity(perfume.id);
+    const buttonText = cartQty > 0 ? `+ (${cartQty} en carrito)` : 'Agregar al Pedido';
+    const buttonClass = cartQty > 0 ? 'whatsapp-btn add-more-btn' : 'whatsapp-btn add-to-cart-btn';
 
     card.innerHTML = `
         <div class="product-header">
@@ -147,13 +147,9 @@ function createProductCard(perfume) {
         </button>
     `;
 
-    // Agregar event listener al botón
+    // Agregar event listener al botón (siempre agrega al carrito)
     const btn = card.querySelector('button');
-    if (inCart) {
-        btn.addEventListener('click', () => removeFromCartById(perfume.id));
-    } else {
-        btn.addEventListener('click', () => addToCart(perfume));
-    }
+    btn.addEventListener('click', () => addToCart(perfume));
 
     return card;
 }
@@ -207,10 +203,10 @@ function createTableRow(perfume) {
         ? `<td data-label="Género:"><span class="table-gender">${perfume.genero.toUpperCase()}</span></td>`
         : '';
 
-    // Verificar si está en el carrito
-    const inCart = isInCart(perfume.id);
-    const buttonText = inCart ? 'Quitar del Pedido' : 'Agregar al Pedido';
-    const buttonClass = inCart ? 'table-btn table-remove-from-cart' : 'table-btn table-add-to-cart';
+    // Verificar si está en el carrito y obtener cantidad
+    const cartQty = getCartQuantity(perfume.id);
+    const buttonText = cartQty > 0 ? `+ (${cartQty})` : '+';
+    const buttonClass = cartQty > 0 ? 'table-btn table-add-more' : 'table-btn table-add-to-cart';
 
     // Aplicar clase de género para background
     row.className = perfume.genero === 'masculino' ? 'row-masculino' : 'row-femenino';
@@ -242,13 +238,9 @@ function createTableRow(perfume) {
         </td>
     `;
 
-    // Agregar event listener al botón
+    // Agregar event listener al botón (siempre agrega al carrito)
     const btn = row.querySelector('button');
-    if (inCart) {
-        btn.addEventListener('click', () => removeFromCartById(perfume.id));
-    } else {
-        btn.addEventListener('click', () => addToCart(perfume));
-    }
+    btn.addEventListener('click', () => addToCart(perfume));
 
     // Agregar event listener para expandir en mobile (solo en el área del nombre)
     const nameCell = row.querySelector('.mobile-expandable');
@@ -340,15 +332,49 @@ filterTableMasculino.addEventListener('change', () => {
 
 // Verificar si un producto está en el carrito
 function isInCart(perfumeId) {
-    return cart.some(item => item.id === perfumeId);
+    return cart.some(item => item.perfume.id === perfumeId);
+}
+
+// Obtener cantidad de un producto en el carrito
+function getCartQuantity(perfumeId) {
+    const item = cart.find(item => item.perfume.id === perfumeId);
+    return item ? item.quantity : 0;
 }
 
 // Agregar producto al carrito
 function addToCart(perfume) {
-    // Solo agregar si no está ya en el carrito
-    if (!isInCart(perfume.id)) {
-        cart.push(perfume);
+    const existingItem = cart.find(item => item.perfume.id === perfume.id);
+
+    if (existingItem) {
+        // Si ya existe, incrementar cantidad
+        existingItem.quantity++;
+    } else {
+        // Si no existe, agregar nuevo item con cantidad 1
+        cart.push({ perfume, quantity: 1 });
+    }
+    updateCart();
+}
+
+// Incrementar cantidad de un producto
+function incrementQuantity(perfumeId) {
+    const item = cart.find(item => item.perfume.id === perfumeId);
+    if (item) {
+        item.quantity++;
         updateCart();
+    }
+}
+
+// Decrementar cantidad de un producto
+function decrementQuantity(perfumeId) {
+    const item = cart.find(item => item.perfume.id === perfumeId);
+    if (item) {
+        if (item.quantity > 1) {
+            item.quantity--;
+            updateCart();
+        } else {
+            // Si la cantidad es 1, quitar del carrito
+            removeFromCartById(perfumeId);
+        }
     }
 }
 
@@ -360,7 +386,7 @@ function removeFromCart(index) {
 
 // Quitar producto del carrito por ID
 function removeFromCartById(perfumeId) {
-    const index = cart.findIndex(item => item.id === perfumeId);
+    const index = cart.findIndex(item => item.perfume.id === perfumeId);
     if (index !== -1) {
         cart.splice(index, 1);
         updateCart();
@@ -377,9 +403,12 @@ function clearCart() {
 
 // Actualizar vista del carrito
 function updateCart() {
+    // Calcular total de items (sumando cantidades)
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
     // Actualizar contador
-    cartCount.textContent = cart.length;
-    if (cart.length === 0) {
+    cartCount.textContent = totalItems;
+    if (totalItems === 0) {
         cartCount.classList.add('hidden');
     } else {
         cartCount.classList.remove('hidden');
@@ -405,32 +434,44 @@ function updateCart() {
 function renderCartItems() {
     cartItems.innerHTML = '';
 
-    cart.forEach((perfume, index) => {
-        const item = document.createElement('div');
-        item.className = 'cart-item';
+    cart.forEach((item, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
 
-        item.innerHTML = `
+        const subtotal = item.perfume.precio * item.quantity;
+
+        cartItem.innerHTML = `
             <div class="cart-item-info">
-                <div class="cart-item-name">${perfume.nombre}</div>
-                <div class="cart-item-brand">${perfume.marca}</div>
-                <div class="cart-item-price">$${perfume.precio.toLocaleString('es-AR')}</div>
+                <div class="cart-item-name">${item.perfume.nombre}</div>
+                <div class="cart-item-brand">${item.perfume.marca}</div>
+                <div class="cart-item-quantity">
+                    <button class="quantity-btn" data-action="decrement" data-id="${item.perfume.id}">−</button>
+                    <span class="quantity-value">${item.quantity}</span>
+                    <button class="quantity-btn" data-action="increment" data-id="${item.perfume.id}">+</button>
+                </div>
+                <div class="cart-item-price">$${subtotal.toLocaleString('es-AR')}</div>
             </div>
             <button class="cart-item-remove" data-index="${index}">
-                Quitar
+                ×
             </button>
         `;
 
-        // Event listener para quitar
-        const removeBtn = item.querySelector('.cart-item-remove');
+        // Event listeners para controles de cantidad
+        const decrementBtn = cartItem.querySelector('[data-action="decrement"]');
+        const incrementBtn = cartItem.querySelector('[data-action="increment"]');
+        const removeBtn = cartItem.querySelector('.cart-item-remove');
+
+        decrementBtn.addEventListener('click', () => decrementQuantity(item.perfume.id));
+        incrementBtn.addEventListener('click', () => incrementQuantity(item.perfume.id));
         removeBtn.addEventListener('click', () => removeFromCart(index));
 
-        cartItems.appendChild(item);
+        cartItems.appendChild(cartItem);
     });
 }
 
 // Calcular y mostrar total
 function updateCartTotal() {
-    const total = cart.reduce((sum, perfume) => sum + perfume.precio, 0);
+    const total = cart.reduce((sum, item) => sum + (item.perfume.precio * item.quantity), 0);
     cartTotalPrice.textContent = `$${total.toLocaleString('es-AR')}`;
 }
 
@@ -438,17 +479,21 @@ function updateCartTotal() {
 function checkout() {
     if (cart.length === 0) return;
 
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
     // Construir mensaje
     let message = '*Mi Pedido - Esencias Premium*\n\n';
-    message += `Total de productos: ${cart.length}\n\n`;
+    message += `Total de unidades: ${totalItems}\n\n`;
 
-    cart.forEach((perfume, index) => {
-        message += `${index + 1}. *${perfume.nombre}*\n`;
-        message += `   ${perfume.marca}\n`;
-        message += `   $${perfume.precio.toLocaleString('es-AR')}\n\n`;
+    cart.forEach((item, index) => {
+        const subtotal = item.perfume.precio * item.quantity;
+        message += `${index + 1}. *${item.perfume.nombre}*\n`;
+        message += `   ${item.perfume.marca}\n`;
+        message += `   Cantidad: ${item.quantity} x $${item.perfume.precio.toLocaleString('es-AR')}\n`;
+        message += `   Subtotal: $${subtotal.toLocaleString('es-AR')}\n\n`;
     });
 
-    const total = cart.reduce((sum, perfume) => sum + perfume.precio, 0);
+    const total = cart.reduce((sum, item) => sum + (item.perfume.precio * item.quantity), 0);
     message += `*TOTAL: $${total.toLocaleString('es-AR')}*`;
 
     // Abrir WhatsApp
