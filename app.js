@@ -214,10 +214,23 @@ function createTableRow(perfume) {
 
     // Aplicar clase de género para background
     row.className = perfume.genero === 'masculino' ? 'row-masculino' : 'row-femenino';
+    row.dataset.perfumeId = perfume.id;
 
     row.innerHTML = `
         <td data-label="ID:"><span class="table-id">Nº ${productId}</span></td>
-        <td data-label="Nombre:"><span class="table-name"><span class="gender-icon">${genderIcon}</span> ${perfume.nombre}</span></td>
+        <td data-label="Nombre:" class="mobile-expandable">
+            <span class="table-name"><span class="gender-icon">${genderIcon}</span> ${perfume.nombre}</span>
+            <div class="mobile-details">
+                <div class="mobile-detail-item">
+                    <span class="mobile-detail-label">Marca:</span>
+                    <span class="mobile-detail-value">${perfume.marca}</span>
+                </div>
+                <div class="mobile-detail-item">
+                    <span class="mobile-detail-label">Notas:</span>
+                    <div class="mobile-detail-notes">${notesHTML}</div>
+                </div>
+            </div>
+        </td>
         <td data-label="Marca:"><span class="table-brand">${perfume.marca}</span></td>
         ${generoColumn}
         <td data-label="Notas:"><div class="table-notes">${notesHTML}</div></td>
@@ -236,6 +249,14 @@ function createTableRow(perfume) {
     } else {
         btn.addEventListener('click', () => addToCart(perfume));
     }
+
+    // Agregar event listener para expandir en mobile (solo en el área del nombre)
+    const nameCell = row.querySelector('.mobile-expandable');
+    nameCell.addEventListener('click', (e) => {
+        // No expandir si se clickea el botón
+        if (e.target.closest('button')) return;
+        row.classList.toggle('expanded');
+    });
 
     return row;
 }

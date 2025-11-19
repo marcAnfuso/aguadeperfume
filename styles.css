@@ -939,9 +939,9 @@ footer p {
         gap: 1.5rem;
     }
 
-    .filter-btn {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.75rem;
+    /* Ocultar filtros del hero en mobile - se duplican con los tabs de la tabla */
+    .filters {
+        display: none;
     }
 
     .info-strip {
@@ -975,6 +975,12 @@ footer p {
         margin-bottom: 1px;
         border: none;
         border-bottom: 1px solid var(--color-border);
+        transition: padding 0.2s ease;
+    }
+
+    .inventory-table tr.expanded {
+        align-items: flex-start;
+        padding: 0.6rem 0.6rem;
     }
 
     /* Mantener diferenciación de género en mobile */
@@ -1009,6 +1015,9 @@ footer p {
     .inventory-table td[data-label="Nombre:"] {
         flex: 1;
         min-width: 0;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .table-name {
@@ -1016,12 +1025,60 @@ footer p {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        width: 100%;
     }
 
     .gender-icon {
         font-size: 0.65rem;
         margin-right: 0.25rem;
         flex-shrink: 0;
+    }
+
+    /* Acordeón de detalles en mobile */
+    .mobile-details {
+        display: none;
+        width: 100%;
+        padding-top: 0.5rem;
+        border-top: 1px solid var(--color-border);
+        margin-top: 0.5rem;
+    }
+
+    .inventory-table tr.expanded .mobile-details {
+        display: block;
+    }
+
+    .mobile-detail-item {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.4rem;
+        font-size: 0.65rem;
+    }
+
+    .mobile-detail-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .mobile-detail-label {
+        font-weight: 700;
+        color: var(--color-text-light);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+    }
+
+    .mobile-detail-value {
+        color: var(--color-text);
+    }
+
+    .mobile-detail-notes {
+        display: flex;
+        gap: 0.25rem;
+        flex-wrap: wrap;
+    }
+
+    .mobile-detail-notes .table-note-tag {
+        font-size: 0.5rem;
+        padding: 0.1rem 0.3rem;
     }
 
     /* Precio - tamaño fijo */
