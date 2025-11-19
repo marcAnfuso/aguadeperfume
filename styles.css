@@ -165,6 +165,11 @@ header h1 {
     color: var(--color-secondary);
 }
 
+/* Banner Mayorista - Oculto en desktop */
+.wholesale-banner {
+    display: none;
+}
+
 /* Info Strip */
 .info-strip {
     display: grid;
@@ -942,6 +947,54 @@ footer p {
     /* Ocultar filtros del hero en mobile - se duplican con los tabs de la tabla */
     .filters {
         display: none;
+    }
+
+    /* Mostrar banner mayorista solo en mobile */
+    .wholesale-banner {
+        display: block;
+        border: 2px solid var(--color-primary);
+        padding: 1rem;
+        margin-top: 1.5rem;
+        text-align: center;
+        background-color: var(--color-secondary);
+    }
+
+    .wholesale-text {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        color: var(--color-text);
+        letter-spacing: 0.5px;
+    }
+
+    .wholesale-text strong {
+        font-weight: 700;
+        color: var(--color-primary);
+        letter-spacing: 1px;
+    }
+
+    .wholesale-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.7rem 1.2rem;
+        background-color: var(--color-primary);
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        transition: var(--transition);
+        border: none;
+    }
+
+    .wholesale-btn:hover {
+        background-color: #333333;
+    }
+
+    .wholesale-btn svg {
+        flex-shrink: 0;
     }
 
     .info-strip {
