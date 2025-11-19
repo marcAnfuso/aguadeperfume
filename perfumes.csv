@@ -1,0 +1,74 @@
+ID,Ranking,Nombre,Marca,Genero,Notas,Precio,Costo,Ganancia
+1,1,La Vie Est Belle,Lancôme,Femenino,"floral, frutal, aromático",16900,9000,7900
+2,2,Good Girl,Carolina Herrera,Femenino,"floral, aromático, madera",16900,9000,7900
+3,3,Olympea,Paco Rabanne,Femenino,"floral, frutal, aromático, especiado",16900,9000,7900
+4,4,My Way,Giorgio Armani,Femenino,"floral, cítrico, vainilla",16900,9000,7900
+5,5,Lady Million,Paco Rabanne,Femenino,"floral, frutal",16900,9000,7900
+6,6,Sí,Giorgio Armani,Femenino,"floral, frutal, aromático",16900,9000,7900
+7,7,212 Sexy,Carolina Herrera,Femenino,"floral, frutal",16900,9000,7900
+8,8,Fame,Paco Rabanne,Femenino,"floral, frutal, aromático",16900,9000,7900
+9,9,Tommy Girl,Tommy Hilfiger,Femenino,"floral, cítrico, acqua",16900,9000,7900
+10,10,Halloween,Jesús del Pozo,Femenino,"floral, frutal",16900,9000,7900
+11,11,Nina,Nina Ricci,Femenino,"floral, frutal, caramelo, cítrico",16900,9000,7900
+12,12,Flower,Kenzo,Femenino,"floral, aromático",16900,9000,7900
+13,13,L'Interdit,Givenchy,Femenino,"frutal, aromático, floral",16900,9000,7900
+14,14,Light Blue,Dolce & Gabbana,Femenino,"floral, frutal",16900,9000,7900
+15,15,212 VIP Rosé,Carolina Herrera,Femenino,"floral, frutal, aromático, madera",16900,9000,7900
+16,16,Ralph,Ralph Lauren,Femenino,"floral, frutal, cítrico",16900,9000,7900
+17,17,Scandal,Jean Paul Gaultier,Femenino,"frutal, aromático, floral",16900,9000,7900
+18,18,Black Opium,Yves Saint Laurent,Femenino,"floral, frutal, aromático",16900,9000,7900
+19,19,Acqua di Gioia,Giorgio Armani,Femenino,"floral, cítrico, acqua",16900,9000,7900
+20,20,CH,Carolina Herrera,Femenino,"floral, frutal, caramelo",16900,9000,7900
+21,21,J'adore,Dior,Femenino,floral,16900,9000,7900
+22,22,Be Delicious,DKNY,Femenino,"floral, frutal",16900,9000,7900
+23,23,Armani Code,Giorgio Armani,Femenino,"floral, frutal, cítrico",16900,9000,7900
+24,24,Libre,Yves Saint Laurent,Femenino,"cítrico, floral, aromático",16900,9000,7900
+25,25,Angel,Mugler,Femenino,"frutal, vainilla",16900,9000,7900
+26,26,212 NYC,Carolina Herrera,Femenino,floral,16900,9000,7900
+27,27,Very Irresistible,Givenchy,Femenino,"floral, aromático",16900,9000,7900
+28,28,Kenzo World,Kenzo,Femenino,"frutal, aromático, verde",16900,9000,7900
+29,29,Black XS,Paco Rabanne,Femenino,"floral, frutal, aromático, especiado",16900,9000,7900
+30,30,Amor Amor,Cacharel,Femenino,"floral, frutal, aromático",16900,9000,7900
+31,31,Ange ou Démon,Givenchy,Femenino,"floral, especiado",16900,9000,7900
+32,32,DKNY,DKNY,Femenino,"cítrico, acqua, floral",16900,9000,7900
+33,33,Miss Dior,Dior,Femenino,"floral, frutal",16900,9000,7900
+34,34,Omnia Crystalline,Bvlgari,Femenino,"floral, frutal, madera",16900,9000,7900
+35,35,Valentina,Valentino,Femenino,"floral, frutal, aromático",16900,9000,7900
+36,36,Chanel Nº5,Chanel,Femenino,"floral, cítrico",16900,9000,7900
+37,37,Black Orchid,Tom Ford,Femenino,"especiado, aromático, floral",16900,9000,7900
+38,38,212 VIP,Carolina Herrera,Femenino,"floral, frutal, aromático",16900,9000,7900
+101,1,One Million,Paco Rabanne,Masculino,"floral, aromático, especiado",16900,9000,7900
+102,2,Invictus,Paco Rabanne,Masculino,"floral, frutal, madera",16900,9000,7900
+103,3,Scandal,Jean Paul Gaultier,Masculino,"caramelo, cítrico, especiado",16900,9000,7900
+104,4,Bad Boy,Carolina Herrera,Masculino,"aromático, cítrico, floral",16900,9000,7900
+105,5,CK One,Calvin Klein,Masculino,"floral, cítrico",16900,9000,7900
+106,6,Phantom,Paco Rabanne,Masculino,"cítrico, vainilla, aromático",16900,9000,7900
+107,7,Tommy,Tommy Hilfiger,Masculino,"cítrico, frutal, especiado",16900,9000,7900
+108,8,Kenzo Homme,Kenzo,Masculino,"acqua, madera, aromático",16900,9000,7900
+109,9,212 VIP Black,Carolina Herrera,Masculino,"cítrico, especiado, aromático",16900,9000,7900
+110,10,Sauvage,Dior,Masculino,"especiado, aromático, madera",16900,9000,7900
+111,11,Fahrenheit,Dior,Masculino,"madera, floral, especiado",16900,9000,7900
+112,12,212 Men NYC,Carolina Herrera,Masculino,"floral, verde, especiado",16900,9000,7900
+113,13,CH Men,Carolina Herrera,Masculino,"cítrico, madera, aromático",16900,9000,7900
+114,14,212 VIP Men,Carolina Herrera,Masculino,"especiado, aromático, madera",16900,9000,7900
+118,18,Polo Blue,Ralph Lauren,Masculino,"frutal, verde",16900,9000,7900
+119,19,Polo Red,Ralph Lauren,Masculino,"cítrico, aromático, especiado",16900,9000,7900
+120,20,Black XS,Paco Rabanne,Masculino,"acqua, madera, aromático",16900,9000,7900
+121,21,A*Men,Mugler,Masculino,"madera, vainilla, aromático",16900,9000,7900
+122,22,Boss Bottled,Hugo Boss,Masculino,"especiado, madera, frutal",16900,9000,7900
+123,23,Hugo Man,Hugo Boss,Masculino,"acqua, verde",16900,9000,7900
+124,24,Eros,Versace,Masculino,"frutal, cítrico, aromático",16900,9000,7900
+125,25,Creed Aventus,Creed,Masculino,"cítrico, aromático, madera",16900,9000,7900
+126,26,Joop!,Joop!,Masculino,"aromático, especiado, floral",16900,9000,7900
+127,27,Wanted,Azzaro,Masculino,"especiado, aromático, frutal",16900,9000,7900
+128,28,Le Male,Jean Paul Gaultier,Masculino,"floral, especiado, aromático",16900,9000,7900
+129,29,Spicebomb,Viktor & Rolf,Masculino,"aromático, madera, especiado",16900,9000,7900
+130,30,Bvlgari Man,Bvlgari,Masculino,"aromático, cítrico, madera",16900,9000,7900
+131,31,Allure Homme Sport,Chanel,Masculino,"cítrico, especiado, aromático",16900,9000,7900
+132,32,Cool Water,Davidoff,Masculino,"acqua, floral, aromático",16900,9000,7900
+133,33,212 Sexy Men,Carolina Herrera,Masculino,"especiado, aromático",16900,9000,7900
+134,34,Polo Black,Ralph Lauren,Masculino,"aromático, verde",16900,9000,7900
+135,35,Terre d'Hermès,Hermès,Masculino,"cítrico, madera, especiado",16900,9000,7900
+136,36,Bleu de Chanel,Chanel,Masculino,"cítrico, madera, aromático",16900,9000,7900
+137,37,Polo,Ralph Lauren,Masculino,"verde, especiado",16900,9000,7900
+138,38,La Nuit de L'Homme,Yves Saint Laurent,Masculino,"especiado, aromático, floral",16900,9000,7900

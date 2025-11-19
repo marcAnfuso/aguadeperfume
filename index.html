@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencias Premium - Llavallol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ESENCIAS PREMIUM</h1>
+            <p class="tagline">Elegí tu fragancia y coordinamos la entrega por WhatsApp</p>
+            <p class="instagram">@aguadeperfume</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="BUSCAR PERFUME..."
+                    autocomplete="off"
+                >
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="femenino">Femeninos</button>
+                <button class="filter-btn" data-filter="masculino">Masculinos</button>
+            </div>
+        </section>
+
+        <!-- Info Strip -->
+        <section class="info-strip">
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                </svg>
+                <span>60ml Premium</span>
+            </div>
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+                <span>$16.900</span>
+            </div>
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Llavallol / GBA Sur</span>
+            </div>
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+                <span>Entrega a domicilio</span>
+            </div>
+        </section>
+
+        <!-- Results Count -->
+        <div id="resultsCount" class="results-count"></div>
+
+        <!-- Featured Section: Top 6 -->
+        <section id="featuredSection" class="featured-section">
+            <h2 class="section-title">MÁS VENDIDOS</h2>
+
+            <!-- Femeninos Top 3 -->
+            <div class="featured-subsection">
+                <h3 class="subsection-title">FEMENINO:</h3>
+                <div id="featuredFemeninoGrid" class="products-grid">
+                    <!-- Top 3 feminine products will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Masculinos Top 3 -->
+            <div class="featured-subsection">
+                <h3 class="subsection-title">MASCULINO:</h3>
+                <div id="featuredMasculinoGrid" class="products-grid">
+                    <!-- Top 3 masculine products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Inventory Table Section -->
+        <section id="inventorySection" class="inventory-section">
+            <div class="inventory-header">
+                <h2 class="section-title">INVENTARIO COMPLETO</h2>
+                <div class="table-filters">
+                    <label class="filter-checkbox">
+                        <input type="checkbox" id="filterTableTodos" checked>
+                        <span>Todos</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" id="filterTableFemenino">
+                        <span>Femenino</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" id="filterTableMasculino">
+                        <span>Masculino</span>
+                    </label>
+                </div>
+            </div>
+            <div class="table-container">
+                <table id="inventoryTable" class="inventory-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>MARCA INSP.</th>
+                            <th id="thGenero">GÉNERO</th>
+                            <th>NOTAS</th>
+                            <th>PRECIO</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventoryTableBody">
+                        <!-- Rest of products will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- No Results -->
+        <div id="noResults" class="no-results" style="display: none;">
+            <p class="no-results-title">NO ENCONTRADO EN STOCK</p>
+            <p class="no-results-text">No lo tenemos disponible ahora, pero podemos conseguirlo.</p>
+            <a href="https://wa.me/5491112345678?text=Hola!%20Quiero%20consultar%20por%20un%20perfume%20que%20no%20está%20en%20la%20lista"
+               target="_blank"
+               class="whatsapp-btn"
+               style="max-width: 300px; margin: 1.5rem auto 0;">
+                Consultar por WhatsApp
+            </a>
+        </div>
+
+        <!-- Carrito Flotante -->
+        <div id="cart" class="cart">
+            <button id="cartToggle" class="cart-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span id="cartCount" class="cart-count">0</span>
+            </button>
+
+            <div id="cartPanel" class="cart-panel">
+                <div class="cart-header">
+                    <h3>MI PEDIDO</h3>
+                    <button id="cartClose" class="cart-close">×</button>
+                </div>
+
+                <div id="cartItems" class="cart-items">
+                    <!-- Cart items will be rendered here -->
+                </div>
+
+                <div id="cartEmpty" class="cart-empty">
+                    <p>Tu pedido está vacío</p>
+                    <p class="cart-empty-hint">Agregá perfumes para hacer tu pedido</p>
+                </div>
+
+                <div id="cartFooter" class="cart-footer" style="display: none;">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cartTotalPrice" class="cart-total-price">$0</span>
+                    </div>
+                    <button id="cartCheckout" class="cart-checkout-btn">
+                        Hacer Pedido por WhatsApp
+                    </button>
+                    <button id="cartClear" class="cart-clear-btn">
+                        Vaciar Pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-instagram">
+                <a href="https://instagram.com/aguadeperfume" target="_blank">📷 @aguadeperfume</a>
+            </p>
+            <p>Llavallol, Lomas de Zamora, GBA Sur</p>
+            <p class="footer-note">Esencias de alta calidad. Lo que importa es lo de adentro.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

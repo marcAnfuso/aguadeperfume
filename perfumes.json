@@ -1,0 +1,659 @@
+[
+  {
+    "id": 1,
+    "nombre": "La Vie Est Belle",
+    "marca": "Lancôme",
+    "genero": "femenino",
+    "ranking": 1,
+    "notas": ["floral", "frutal", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 2,
+    "nombre": "Good Girl",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "ranking": 2,
+    "notas": ["floral", "aromático", "madera"],
+    "precio": 16900
+  },
+  {
+    "id": 3,
+    "nombre": "Olympea",
+    "marca": "Paco Rabanne",
+    "genero": "femenino",
+    "ranking": 3,
+    "notas": ["floral", "frutal", "aromático", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 4,
+    "nombre": "My Way",
+    "marca": "Giorgio Armani",
+    "genero": "femenino",
+    "ranking": 4,
+    "notas": ["floral", "cítrico", "vainilla"],
+    "precio": 16900
+  },
+  {
+    "id": 5,
+    "nombre": "Lady Million",
+    "marca": "Paco Rabanne",
+    "genero": "femenino",
+    "ranking": 5,
+    "notas": ["floral", "frutal"],
+    "precio": 16900
+  },
+  {
+    "id": 6,
+    "nombre": "Sí",
+    "marca": "Giorgio Armani",
+    "genero": "femenino",
+    "ranking": 6,
+    "notas": ["floral", "frutal", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 7,
+    "nombre": "212 Sexy",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "ranking": 7,
+    "notas": ["floral", "frutal"],
+    "precio": 16900
+  },
+  {
+    "id": 8,
+    "nombre": "Fame",
+    "marca": "Paco Rabanne",
+    "genero": "femenino",
+    "ranking": 8,
+    "notas": ["floral", "frutal", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 9,
+    "nombre": "Tommy Girl",
+    "marca": "Tommy Hilfiger",
+    "genero": "femenino",
+    "ranking": 9,
+    "notas": ["floral", "cítrico", "acqua"],
+    "precio": 16900
+  },
+  {
+    "id": 10,
+    "nombre": "Halloween",
+    "marca": "Jesús del Pozo",
+    "genero": "femenino",
+    "ranking": 10,
+    "notas": ["floral", "frutal"],
+    "precio": 16900
+  },
+  {
+    "id": 11,
+    "nombre": "Nina",
+    "marca": "Nina Ricci",
+    "genero": "femenino",
+    "ranking": 11,
+    "notas": ["floral", "frutal", "caramelo", "cítrico"],
+    "precio": 16900
+  },
+  {
+    "id": 12,
+    "nombre": "Flower",
+    "marca": "Kenzo",
+    "genero": "femenino",
+    "ranking": 12,
+    "notas": ["floral", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 13,
+    "nombre": "L'Interdit",
+    "marca": "Givenchy",
+    "genero": "femenino",
+    "ranking": 13,
+    "notas": ["frutal", "aromático", "floral"],
+    "precio": 16900
+  },
+  {
+    "id": 14,
+    "nombre": "Light Blue",
+    "marca": "Dolce & Gabbana",
+    "genero": "femenino",
+    "ranking": 14,
+    "notas": ["floral", "frutal"],
+    "precio": 16900
+  },
+  {
+    "id": 15,
+    "nombre": "212 VIP Rosé",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "ranking": 15,
+    "notas": ["floral", "frutal", "aromático", "madera"],
+    "precio": 16900
+  },
+  {
+    "id": 16,
+    "nombre": "Ralph",
+    "marca": "Ralph Lauren",
+    "genero": "femenino",
+    "ranking": 16,
+    "notas": ["floral", "frutal", "cítrico"],
+    "precio": 16900
+  },
+  {
+    "id": 17,
+    "nombre": "Scandal",
+    "marca": "Jean Paul Gaultier",
+    "genero": "femenino",
+    "ranking": 17,
+    "notas": ["frutal", "aromático", "floral"],
+    "precio": 16900
+  },
+  {
+    "id": 18,
+    "nombre": "Black Opium",
+    "marca": "Yves Saint Laurent",
+    "genero": "femenino",
+    "ranking": 18,
+    "notas": ["floral", "frutal", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 19,
+    "nombre": "Acqua di Gioia",
+    "marca": "Giorgio Armani",
+    "genero": "femenino",
+    "ranking": 19,
+    "notas": ["floral", "cítrico", "acqua"],
+    "precio": 16900
+  },
+  {
+    "id": 20,
+    "nombre": "CH",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "ranking": 20,
+    "notas": ["floral", "frutal", "caramelo"],
+    "precio": 16900
+  },
+  {
+    "id": 21,
+    "nombre": "J'adore",
+    "marca": "Dior",
+    "genero": "femenino",
+    "ranking": 21,
+    "notas": ["floral"],
+    "precio": 16900
+  },
+  {
+    "id": 22,
+    "nombre": "Be Delicious",
+    "marca": "DKNY",
+    "genero": "femenino",
+    "ranking": 22,
+    "notas": ["floral", "frutal"],
+    "precio": 16900
+  },
+  {
+    "id": 23,
+    "nombre": "Armani Code",
+    "marca": "Giorgio Armani",
+    "genero": "femenino",
+    "ranking": 23,
+    "notas": ["floral", "frutal", "cítrico"],
+    "precio": 16900
+  },
+  {
+    "id": 24,
+    "nombre": "Libre",
+    "marca": "Yves Saint Laurent",
+    "genero": "femenino",
+    "ranking": 24,
+    "notas": ["cítrico", "floral", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 25,
+    "nombre": "Angel",
+    "marca": "Mugler",
+    "genero": "femenino",
+    "ranking": 25,
+    "notas": ["frutal", "vainilla"],
+    "precio": 16900
+  },
+  {
+    "id": 26,
+    "nombre": "212 NYC",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "ranking": 26,
+    "notas": ["floral"],
+    "precio": 16900
+  },
+  {
+    "id": 27,
+    "nombre": "Very Irresistible",
+    "marca": "Givenchy",
+    "genero": "femenino",
+    "ranking": 27,
+    "notas": ["floral", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 28,
+    "nombre": "Kenzo World",
+    "marca": "Kenzo",
+    "genero": "femenino",
+    "ranking": 28,
+    "notas": ["frutal", "aromático", "verde"],
+    "precio": 16900
+  },
+  {
+    "id": 29,
+    "nombre": "Black XS",
+    "marca": "Paco Rabanne",
+    "genero": "femenino",
+    "ranking": 29,
+    "notas": ["floral", "frutal", "aromático", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 30,
+    "nombre": "Amor Amor",
+    "marca": "Cacharel",
+    "genero": "femenino",
+    "ranking": 30,
+    "notas": ["floral", "frutal", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 31,
+    "nombre": "Ange ou Démon",
+    "marca": "Givenchy",
+    "genero": "femenino",
+    "ranking": 31,
+    "notas": ["floral", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 32,
+    "nombre": "DKNY",
+    "marca": "DKNY",
+    "genero": "femenino",
+    "ranking": 32,
+    "notas": ["cítrico", "acqua", "floral"],
+    "precio": 16900
+  },
+  {
+    "id": 33,
+    "nombre": "Miss Dior",
+    "marca": "Dior",
+    "genero": "femenino",
+    "ranking": 33,
+    "notas": ["floral", "frutal"],
+    "precio": 16900
+  },
+  {
+    "id": 34,
+    "nombre": "Omnia Crystalline",
+    "marca": "Bvlgari",
+    "genero": "femenino",
+    "ranking": 34,
+    "notas": ["floral", "frutal", "madera"],
+    "precio": 16900
+  },
+  {
+    "id": 35,
+    "nombre": "Valentina",
+    "marca": "Valentino",
+    "genero": "femenino",
+    "ranking": 35,
+    "notas": ["floral", "frutal", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 36,
+    "nombre": "Chanel Nº5",
+    "marca": "Chanel",
+    "genero": "femenino",
+    "ranking": 36,
+    "notas": ["floral", "cítrico"],
+    "precio": 16900
+  },
+  {
+    "id": 37,
+    "nombre": "Black Orchid",
+    "marca": "Tom Ford",
+    "genero": "femenino",
+    "ranking": 37,
+    "notas": ["especiado", "aromático", "floral"],
+    "precio": 16900
+  },
+  {
+    "id": 38,
+    "nombre": "212 VIP",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "ranking": 38,
+    "notas": ["floral", "frutal", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 101,
+    "nombre": "One Million",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "ranking": 1,
+    "notas": ["floral", "aromático", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 102,
+    "nombre": "Invictus",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "ranking": 2,
+    "notas": ["floral", "frutal", "madera"],
+    "precio": 16900
+  },
+  {
+    "id": 103,
+    "nombre": "Scandal",
+    "marca": "Jean Paul Gaultier",
+    "genero": "masculino",
+    "ranking": 3,
+    "notas": ["caramelo", "cítrico", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 104,
+    "nombre": "Bad Boy",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "ranking": 4,
+    "notas": ["aromático", "cítrico", "floral"],
+    "precio": 16900
+  },
+  {
+    "id": 105,
+    "nombre": "CK One",
+    "marca": "Calvin Klein",
+    "genero": "masculino",
+    "ranking": 5,
+    "notas": ["floral", "cítrico"],
+    "precio": 16900
+  },
+  {
+    "id": 106,
+    "nombre": "Phantom",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "ranking": 6,
+    "notas": ["cítrico", "vainilla", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 107,
+    "nombre": "Tommy",
+    "marca": "Tommy Hilfiger",
+    "genero": "masculino",
+    "ranking": 7,
+    "notas": ["cítrico", "frutal", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 108,
+    "nombre": "Kenzo Homme",
+    "marca": "Kenzo",
+    "genero": "masculino",
+    "ranking": 8,
+    "notas": ["acqua", "madera", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 109,
+    "nombre": "212 VIP Black",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "ranking": 9,
+    "notas": ["cítrico", "especiado", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 110,
+    "nombre": "Sauvage",
+    "marca": "Dior",
+    "genero": "masculino",
+    "ranking": 10,
+    "notas": ["especiado", "aromático", "madera"],
+    "precio": 16900
+  },
+  {
+    "id": 111,
+    "nombre": "Fahrenheit",
+    "marca": "Dior",
+    "genero": "masculino",
+    "ranking": 11,
+    "notas": ["madera", "floral", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 112,
+    "nombre": "212 Men NYC",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "ranking": 12,
+    "notas": ["floral", "verde", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 113,
+    "nombre": "CH Men",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "ranking": 13,
+    "notas": ["cítrico", "madera", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 114,
+    "nombre": "212 VIP Men",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "ranking": 14,
+    "notas": ["especiado", "aromático", "madera"],
+    "precio": 16900
+  },
+  {
+    "id": 118,
+    "nombre": "Polo Blue",
+    "marca": "Ralph Lauren",
+    "genero": "masculino",
+    "ranking": 18,
+    "notas": ["frutal", "verde"],
+    "precio": 16900
+  },
+  {
+    "id": 119,
+    "nombre": "Polo Red",
+    "marca": "Ralph Lauren",
+    "genero": "masculino",
+    "ranking": 19,
+    "notas": ["cítrico", "aromático", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 120,
+    "nombre": "Black XS",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "ranking": 20,
+    "notas": ["acqua", "madera", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 121,
+    "nombre": "A*Men",
+    "marca": "Mugler",
+    "genero": "masculino",
+    "ranking": 21,
+    "notas": ["madera", "vainilla", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 122,
+    "nombre": "Boss Bottled",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "ranking": 22,
+    "notas": ["especiado", "madera", "frutal"],
+    "precio": 16900
+  },
+  {
+    "id": 123,
+    "nombre": "Hugo Man",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "ranking": 23,
+    "notas": ["acqua", "verde"],
+    "precio": 16900
+  },
+  {
+    "id": 124,
+    "nombre": "Eros",
+    "marca": "Versace",
+    "genero": "masculino",
+    "ranking": 24,
+    "notas": ["frutal", "cítrico", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 125,
+    "nombre": "Creed Aventus",
+    "marca": "Creed",
+    "genero": "masculino",
+    "ranking": 25,
+    "notas": ["cítrico", "aromático", "madera"],
+    "precio": 16900
+  },
+  {
+    "id": 126,
+    "nombre": "Joop!",
+    "marca": "Joop!",
+    "genero": "masculino",
+    "ranking": 26,
+    "notas": ["aromático", "especiado", "floral"],
+    "precio": 16900
+  },
+  {
+    "id": 127,
+    "nombre": "Wanted",
+    "marca": "Azzaro",
+    "genero": "masculino",
+    "ranking": 27,
+    "notas": ["especiado", "aromático", "frutal"],
+    "precio": 16900
+  },
+  {
+    "id": 128,
+    "nombre": "Le Male",
+    "marca": "Jean Paul Gaultier",
+    "genero": "masculino",
+    "ranking": 28,
+    "notas": ["floral", "especiado", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 129,
+    "nombre": "Spicebomb",
+    "marca": "Viktor & Rolf",
+    "genero": "masculino",
+    "ranking": 29,
+    "notas": ["aromático", "madera", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 130,
+    "nombre": "Bvlgari Man",
+    "marca": "Bvlgari",
+    "genero": "masculino",
+    "ranking": 30,
+    "notas": ["aromático", "cítrico", "madera"],
+    "precio": 16900
+  },
+  {
+    "id": 131,
+    "nombre": "Allure Homme Sport",
+    "marca": "Chanel",
+    "genero": "masculino",
+    "ranking": 31,
+    "notas": ["cítrico", "especiado", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 132,
+    "nombre": "Cool Water",
+    "marca": "Davidoff",
+    "genero": "masculino",
+    "ranking": 32,
+    "notas": ["acqua", "floral", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 133,
+    "nombre": "212 Sexy Men",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "ranking": 33,
+    "notas": ["especiado", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 134,
+    "nombre": "Polo Black",
+    "marca": "Ralph Lauren",
+    "genero": "masculino",
+    "ranking": 34,
+    "notas": ["aromático", "verde"],
+    "precio": 16900
+  },
+  {
+    "id": 135,
+    "nombre": "Terre d'Hermès",
+    "marca": "Hermès",
+    "genero": "masculino",
+    "ranking": 35,
+    "notas": ["cítrico", "madera", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 136,
+    "nombre": "Bleu de Chanel",
+    "marca": "Chanel",
+    "genero": "masculino",
+    "ranking": 36,
+    "notas": ["cítrico", "madera", "aromático"],
+    "precio": 16900
+  },
+  {
+    "id": 137,
+    "nombre": "Polo",
+    "marca": "Ralph Lauren",
+    "genero": "masculino",
+    "ranking": 37,
+    "notas": ["verde", "especiado"],
+    "precio": 16900
+  },
+  {
+    "id": 138,
+    "nombre": "La Nuit de L'Homme",
+    "marca": "Yves Saint Laurent",
+    "genero": "masculino",
+    "ranking": 38,
+    "notas": ["especiado", "aromático", "floral"],
+    "precio": 16900
+  }
+]
