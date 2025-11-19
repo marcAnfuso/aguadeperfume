@@ -889,11 +889,11 @@ footer p {
     }
 
     .tagline {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
-    .instagram {
-        font-size: 0.85rem;
+    .instagram-link {
+        font-size: 0.75rem;
     }
 
     .hero {
@@ -918,7 +918,7 @@ footer p {
 
     .filter-btn {
         padding: 0.6rem 1.2rem;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
 
     .info-strip {
@@ -927,7 +927,7 @@ footer p {
     }
 
     .section-title {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         letter-spacing: 2px;
         margin-bottom: 1.5rem;
     }
@@ -983,12 +983,12 @@ footer p {
     }
 
     .table-note-tag {
-        font-size: 0.5rem;
-        padding: 0.1rem 0.3rem;
+        font-size: 0.55rem;
+        padding: 0.15rem 0.35rem;
     }
 
     .table-btn {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         padding: 0.6rem 1.2rem;
         width: 100%;
     }
@@ -1004,11 +1004,11 @@ footer p {
     }
 
     .filter-checkbox {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
 
     .subsection-title {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         margin-bottom: 1rem;
     }
 
@@ -1051,7 +1051,7 @@ footer p {
     }
 
     .inventory-table {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
     }
 
     .inventory-table th,
@@ -1060,10 +1060,10 @@ footer p {
     }
 
     .table-name {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
 
     .table-brand {
-        font-size: 0.55rem;
+        font-size: 0.6rem;
     }
 }
