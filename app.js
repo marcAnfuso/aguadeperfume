@@ -196,7 +196,7 @@ function createTableRow(perfume) {
         .join('');
 
     // Ícono según género
-    const genderIcon = perfume.genero === 'femenino' ? '◆' : '■';
+    const genderIcon = perfume.genero === 'femenino' ? '♀' : '♂';
 
     // Determinar si mostrar columna de género
     const generoColumn = tableGenderFilter === 'todos'
